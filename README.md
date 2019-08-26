@@ -13,17 +13,25 @@ Usage (personal preference): `grep -Proh "$REGEX" . | sort -u > result_file`
 - [Base64](https://github.com/0x41CoreDump/RegHex#Base64)
 - [Facebook Access Token](https://github.com/0x41CoreDump/RegHex#Facebook-Access-Token)
 - [Facebook Client ID](https://github.com/0x41CoreDump/RegHex#Facebook-Client-ID)
+- [Facebook Oauth](https://github.com/0x41CoreDump/RegHex#Facebook-Oauth)
 - [Facebook Secret Key](https://github.com/0x41CoreDump/RegHex#Facebook-Secret-Key)
 - [Github](https://github.com/0x41CoreDump/RegHex#Github)
 - [Google API Key](https://github.com/0x41CoreDump/RegHex#Google-API-Key)
 - [Google Cloud Platform API Key](https://github.com/0x41CoreDump/RegHex#Google-Cloud-Platfrom-API-Key)
-- [Google Oauth](https://github.com/0x41CoreDump/RegHex#Google-Oauth)
+- [Google Drive API Key](https://github.com/0x41CoreDump/RegHex#Google-Drive-API-Key)
+- [Goole Drive Oauth](https://github.com/0x41CoreDump/RegHex#Google-Drive-Oauth)
+- [Google Gmail API Key](https://github.com/0x41CoreDump/RegHex#Google-Gmail-API-Key)
+- [Google Gmail Oauth](https://github.com/0x41CoreDump/RegHex#Google-Gmail-Oauth)
+- [Google OAuth Access Token](https://github.com/0x41CoreDump/RegHex#Google-Oauth-Access-Token)
+- [Google Youtube API Key](https://github.com/0x41CoreDump/RegHex#Google-Youtube-API-Key)
+- [Google Youtube Oauth](https://github.com/0x41CoreDump/RegHex#Google-Youtube-Oauth)
 - [IPv4](https://github.com/0x41CoreDump/RegHex#IPv4)
 - [IPv6](https://github.com/0x41CoreDump/RegHex#IPv6)
 - [Javascript Variables](https://github.com/0x41CoreDump/RegHex#Javascript-Variables)
 - [LinkedIn Client ID](https://github.com/0x41CoreDump/RegHex#LinkedIn-Client-ID)
 - [LinkedIn Secret Key](https://github.com/0x41CoreDump/RegHex#LinkedIn-Secret-Key)
-- [Slack](https://github.com/0x41CoreDump/RegHex#Slack)
+- [Slack Token](https://github.com/0x41CoreDump/RegHex#Slack-Token)
+- [Slack Webhook]()
 - [Twitter Client ID](https://github.com/0x41CoreDump/RegHex#Twitter-Client-ID)
 - [Twitter Secret Key](https://github.com/0x41CoreDump/RegHex#Twitter-Secret-Key)
 - [URL Parameter](https://github.com/0x41CoreDump/RegHex#URL-Parameter)
@@ -65,6 +73,11 @@ EAACEdEose0cBA[0-9A-Za-z]+
 (?i)(facebook|fb)(.{0,20})?['\"][0-9]{13,17}
 ```
 
+### Facebook Oauth
+```
+[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|\"][0-9a-f]{32}['|\"]
+```
+
 ### Facebook Secret Key
 ```
 (?i)(facebook|fb)(.{0,20})?(?-i)['\"][0-9a-f]{32}
@@ -85,9 +98,38 @@ AIza[0-9A-Za-z\\-_]{35}
 (?i)(google|gcp|youtube|drive|yt)(.{0,20})?['\"][AIza[0-9a-z\\-_]{35}]['\"]
 ```
 
-### Google Oauth
+### Google Drive API Key
 ```
-(?i)(google|gcp|auth)(.{0,20})?['"][0-9]+-[0-9a-z_]{32}\.apps\.googleusercontent\.com['"]
+AIza[0-9A-Za-z\\-_]{35}
+```
+### Google Drive Oauth
+```
+[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
+```
+
+### Google Gmail API Key
+```
+AIza[0-9A-Za-z\\-_]{35}
+```
+
+### Google Gmail Oauth
+```
+[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
+```
+
+### Google Oauth Access Token
+```
+ya29\\.[0-9A-Za-z\\-_]+
+```
+
+### Google Youtube API Key
+```
+AIza[0-9A-Za-z\\-_]{35}
+```
+
+### Google Youtube Oauth
+```
+[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
 ```
 
 ### IPv4
@@ -115,9 +157,14 @@ AIza[0-9A-Za-z\\-_]{35}
 (?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]
 ```
 
-### Slack
+### Slack Token
 ```
 xox[baprs]-([0-9a-zA-Z]{10,48})?
+```
+
+### Slack Webhook
+```
+https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}
 ```
 
 ### Twitter Client ID
