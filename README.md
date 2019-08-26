@@ -195,7 +195,7 @@ Without Protocol:
 # Credits
 - [TomNomNom](https://github.com/tomnomnom) and his repo [gf](https://github.com/tomnomnom/gf)
 - [gitleaks](https://github.com/zricethezav/gitleaks)
+- [truffleHog](https://github.com/dxa4481/truffleHog)
 - https://stackoverflow.com/questions/53497/regular-expression-that-matches-valid-ipv6-addresses
 - https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
 - https://stackoverflow.com/questions/44654809/regex-to-match-ip-addresses
-
