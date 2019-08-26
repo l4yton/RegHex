@@ -27,6 +27,7 @@ Usage (personal preference): `grep -Proh "$REGEX" . | sort -u > result_file`
 - [Twitter Client ID](https://github.com/0x41CoreDump/RegHex#Twitter-Client-ID)
 - [Twitter Secret Key](https://github.com/0x41CoreDump/RegHex#Twitter-Secret-Key)
 - [URL Parameter](https://github.com/0x41CoreDump/RegHex#URL-Parameter)
+- [URLs](https://github.com/0x41CoreDump/RegHex#URLs)
 - [Credits](https://github.com/0x41CoreDump/RegHex#Credits)
 
 ### AWS Client ID
