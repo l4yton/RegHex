@@ -2,8 +2,6 @@
 
 RegHex is a collection of regexes for every use.
 
-Usage (personal preference): `grep -Proh "$REGEX" . | sort -u > result_file`
-
 # Table of Contents
 
 - [AWS Client ID](https://github.com/0x41CoreDump/RegHex#AWS-Client-ID)
