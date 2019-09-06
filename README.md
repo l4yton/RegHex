@@ -4,6 +4,8 @@ RegHex is a collection of regexes for every use.
 
 # Table of Contents
 
+- [Artifactory API Token](https://github.com/0x41CoreDump/RegHex#Artifactory-API-Token)
+- [Artifactory Password](https://github.com/0x41CoreDump/RegHex#Atrtifactory-Password)
 - [AWS Client ID](https://github.com/0x41CoreDump/RegHex#AWS-Client-ID)
 - [AWS MWS Key](https://github.com/0x41CoreDump/RegHex#AWS-MWS-Key)
 - [AWS Secret Key](https://github.com/0x41CoreDump/RegHex#AWS-Secret-Key)
@@ -37,6 +39,16 @@ RegHex is a collection of regexes for every use.
 - [URL Parameter](https://github.com/0x41CoreDump/RegHex#URL-Parameter)
 - [URLs](https://github.com/0x41CoreDump/RegHex#URLs)
 - [Credits](https://github.com/0x41CoreDump/RegHex#Credits)
+
+### Artifactory API Token
+```
+(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}
+```
+
+### Artifactory Password
+```
+(?:\s|=|:|"|^)AP[\dABCDEF][a-zA-Z0-9]{8,}
+```
 
 ### AWS Client ID
 ```
