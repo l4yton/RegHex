@@ -30,7 +30,8 @@ RegHex is a collection of regexes for every use.
 - [LinkedIn Secret Key](https://github.com/0x41CoreDump/RegHex#LinkedIn-Secret-Key)
 - [MD5 Hash](https://github.com/0x41CoreDump/RegHex#MD5-Hash)
 - [Slack Token](https://github.com/0x41CoreDump/RegHex#Slack-Token)
-- [Slack Webhook]()
+- [Slack Webhook](https://github.com/0x41CoreDump/RegHex#Slack-Webhook)
+- [Stripe API Key](https://github.com/0x41CoreDump/RegHex#Stripe-API-Key)
 - [Twitter Client ID](https://github.com/0x41CoreDump/RegHex#Twitter-Client-ID)
 - [Twitter Secret Key](https://github.com/0x41CoreDump/RegHex#Twitter-Secret-Key)
 - [URL Parameter](https://github.com/0x41CoreDump/RegHex#URL-Parameter)
@@ -169,6 +170,11 @@ xox[baprs]-([0-9a-zA-Z]{10,48})?
 ### Slack Webhook
 ```
 https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}
+```
+
+### Stripe API Key
+```
+(?:r|s)k_live_[0-9a-zA-Z]{24}
 ```
 
 ### Twitter Client ID
