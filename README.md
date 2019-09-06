@@ -28,6 +28,7 @@ RegHex is a collection of regexes for every use.
 - [Javascript Variables](https://github.com/0x41CoreDump/RegHex#Javascript-Variables)
 - [LinkedIn Client ID](https://github.com/0x41CoreDump/RegHex#LinkedIn-Client-ID)
 - [LinkedIn Secret Key](https://github.com/0x41CoreDump/RegHex#LinkedIn-Secret-Key)
+- [MD5 Hash](https://github.com/0x41CoreDump/RegHex#MD5-Hash)
 - [Slack Token](https://github.com/0x41CoreDump/RegHex#Slack-Token)
 - [Slack Webhook]()
 - [Twitter Client ID](https://github.com/0x41CoreDump/RegHex#Twitter-Client-ID)
@@ -153,6 +154,11 @@ AIza[0-9A-Za-z\\-_]{35}
 ### LinkedIn Secret Key
 ```
 (?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]
+```
+
+### MD5 Hash
+```
+[a-f0-9]{32}
 ```
 
 ### Slack Token
