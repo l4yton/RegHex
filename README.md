@@ -11,6 +11,7 @@ RegHex is a collection of regexes for every use.
 - [AWS Secret Key](https://github.com/0x41CoreDump/RegHex#AWS-Secret-Key)
 - [Base32](https://github.com/0x41CoreDump/RegHex#Base32)
 - [Base64](https://github.com/0x41CoreDump/RegHex#Base64)
+- [Basic Auth Credentials](https://github.com/0x41CoreDump#Basic-Auth-Credentials)
 - [Cloudinary Basic Auth](https://github.com/0x41CoreDump/RegHex#Cloudinary-Basic-Auth)
 - [Facebook Access Token](https://github.com/0x41CoreDump/RegHex#Facebook-Access-Token)
 - [Facebook Client ID](https://github.com/0x41CoreDump/RegHex#Facebook-Client-ID)
@@ -75,6 +76,11 @@ amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}
 ### Base64
 ```
 (eyJ|YTo|Tzo|PD[89]|aHR0cHM6L|aHR0cDo|rO0)[a-zA-Z0-9+/]+={0,2}
+```
+
+### Basic Auth Credentials
+```
+(?<=:\/\/)[a-zA-Z0-9]+:[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+
 ```
 
 ### Cloudinary Basic Auth
