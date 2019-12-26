@@ -1,7 +1,7 @@
 # RegHex
 
 RegHex is a collection of regexes for every use. <br/>
-I have also made every regex ready to use with [gf](https://github.com/tomnomnom/gf) in the `.gf` directory, so that you can simply copy them into your `~/.gf` directory.
+I have also made every regex ready to use with [gf](https://github.com/tomnomnom/gf), so that you can copy them into your `~/.gf` directory.
 <br/> <br/>
 If you don't like the grep flags I use, you can simply replace the flags with `change_flags.sh`.
 Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `bash /path/to/change_flags.sh -MyFlags`.
