@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "AIza[0-9A-Za-z\\-_]{35}"
+}

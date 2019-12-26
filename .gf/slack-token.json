@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "xox[baprs]-([0-9a-zA-Z]{10,48})?"
+}

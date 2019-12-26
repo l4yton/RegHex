@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "(?i)(facebook|fb)(.{0,20})?['\"][0-9]{13,17}"
+}

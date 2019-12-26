@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "(eyJ|YTo|Tzo|PD[89]|aHR0cHM6L|aHR0cDo|rO0)[a-zA-Z0-9+/]+={0,2}"
+}

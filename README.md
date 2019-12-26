@@ -1,8 +1,12 @@
 # RegHex
 
-RegHex is a collection of regexes for every use.
+RegHex is a collection of regexes for every use. <br/>
+I have also made every regex ready to use with [gf](https://github.com/tomnomnom/gf) in the `.gf` directory, so that you can simply copy them into your `~/.gf` directory.
+<br/> <br/>
+If you don't like the grep flags I use, you can simply replace the flags with `change_flags.sh`.
+Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `bash /path/to/change_flags.sh -MyFlags`.
 
-# Table of Contents
+## Table of Contents
 
 - [Artifactory API Token](https://github.com/0x41CoreDump/RegHex#Artifactory-API-Token)
 - [Artifactory Password](https://github.com/0x41CoreDump/RegHex#Artifactory-Password)
@@ -129,7 +133,7 @@ AIza[0-9A-Za-z\\-_]{35}
 ```
 ### Google Drive Oauth
 ```
-[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
+[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com
 ```
 
 ### Google Gmail API Key
@@ -139,7 +143,7 @@ AIza[0-9A-Za-z\\-_]{35}
 
 ### Google Gmail Oauth
 ```
-[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
+[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com
 ```
 
 ### Google Oauth Access Token
@@ -154,7 +158,7 @@ AIza[0-9A-Za-z\\-_]{35}
 
 ### Google Youtube Oauth
 ```
-[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com
+[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\\.com
 ```
 
 ### IPv4

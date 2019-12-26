@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "(?i)(google|gcp|youtube|drive|yt)(.{0,20})?['\"][AIza[0-9a-z\\-_]{35}]['\"]"
+}
