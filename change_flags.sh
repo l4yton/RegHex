@@ -1,6 +1,6 @@
 #!/bin/bash
 
-change_pattern() {
+change() {
 
     for i in $(ls); do
         sed -i "s/\"flags\":.*/\"flags\": \"$1\",/" $i
@@ -8,4 +8,4 @@ change_pattern() {
 
 }
 
-change_pattern $1
+change $1
