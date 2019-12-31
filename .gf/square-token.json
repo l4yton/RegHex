@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "sqOatp-[0-9A-Za-z\\-_]{22}"
+}

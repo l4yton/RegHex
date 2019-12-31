@@ -10,6 +10,8 @@ Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `b
 
 - [Artifactory API Token](https://github.com/0x41CoreDump/RegHex#Artifactory-API-Token)
 - [Artifactory Password](https://github.com/0x41CoreDump/RegHex#Artifactory-Password)
+- [Authorization Basic](https://github.com/0x41CoreDump/RegHex#Authorization-Basic)
+- [Authorization Bearer](https://github.com/0x41CoreDump/RegHex#Authorization-Bearer)
 - [AWS Client ID](https://github.com/0x41CoreDump/RegHex#AWS-Client-ID)
 - [AWS MWS Key](https://github.com/0x41CoreDump/RegHex#AWS-MWS-Key)
 - [AWS Secret Key](https://github.com/0x41CoreDump/RegHex#AWS-Secret-Key)
@@ -31,17 +33,25 @@ Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `b
 - [Google OAuth Access Token](https://github.com/0x41CoreDump/RegHex#Google-Oauth-Access-Token)
 - [Google Youtube API Key](https://github.com/0x41CoreDump/RegHex#Google-Youtube-API-Key)
 - [Google Youtube Oauth](https://github.com/0x41CoreDump/RegHex#Google-Youtube-Oauth)
+- [Heroku API Key](https://github.com/0x41CoreDump/RegHex#Heroku-API-Key)
 - [IPv4](https://github.com/0x41CoreDump/RegHex#IPv4)
 - [IPv6](https://github.com/0x41CoreDump/RegHex#IPv6)
 - [Javascript Variables](https://github.com/0x41CoreDump/RegHex#Javascript-Variables)
 - [LinkedIn Client ID](https://github.com/0x41CoreDump/RegHex#LinkedIn-Client-ID)
 - [LinkedIn Secret Key](https://github.com/0x41CoreDump/RegHex#LinkedIn-Secret-Key)
+- [Mailchamp API Key](https://github.com/0x41CoreDump/RegHex#Mailchamp-API-Key)
+- [Mailgun API Key](https://github.com/0x41CoreDump#Mailgun-API-Key)
 - [MailTo:](https://github.com/0x41CoreDump/RegHex#MailTo)
 - [MD5 Hash](https://github.com/0x41CoreDump/RegHex#MD5-Hash)
+- [Picatic API Key](https://github.com/0x41CoreDump/RegHex#Picatic-API-Key)
 - [Slack Token](https://github.com/0x41CoreDump/RegHex#Slack-Token)
 - [Slack Webhook](https://github.com/0x41CoreDump/RegHex#Slack-Webhook)
+- [Square Access Token](https://github.com/0x41CoreDump/RegHex#Square-Access-Token)
+- [Square Oauth Secret](https://github.com/0x41CoreDump/RegHex#Square-Ouath-Secret)
 - [Stripe API Key](https://github.com/0x41CoreDump/RegHex#Stripe-API-Key)
+- [Twilio API Key](https://github.com/0x41CoreDump/RegHex#Twilio-API-Key)
 - [Twitter Client ID](https://github.com/0x41CoreDump/RegHex#Twitter-Client-ID)
+- [Twitter Oauth](https://github.com/0x41CoreDump/RegHex#Twitter-Oauth)
 - [Twitter Secret Key](https://github.com/0x41CoreDump/RegHex#Twitter-Secret-Key)
 - [URL Parameter](https://github.com/0x41CoreDump/RegHex#URL-Parameter)
 - [URLs](https://github.com/0x41CoreDump/RegHex#URLs)
@@ -55,6 +65,16 @@ Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `b
 ### Artifactory Password
 ```
 (?:\s|=|:|"|^)AP[\dABCDEF][a-zA-Z0-9]{8,}
+```
+
+### Authorization Basic
+```
+basic [a-zA-Z0-9_\\-:\\.=]+
+```
+
+### Authorization Bearer
+```
+bearer [a-zA-Z0-9_\\-\\.=]+
 ```
 
 ### AWS Client ID
@@ -161,6 +181,11 @@ AIza[0-9A-Za-z\\-_]{35}
 [0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\\.com
 ```
 
+### Heroku API Key
+```
+[h|H][e|E][r|R][o|O][k|K][u|U].{0,30}[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}
+```
+
 ### IPv4
 ```
 \b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}\b
@@ -186,6 +211,16 @@ AIza[0-9A-Za-z\\-_]{35}
 (?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]
 ```
 
+### Mailchamp API Key
+```
+[0-9a-f]{32}-us[0-9]{1,2}
+```
+
+### Mailgun API Key
+```
+key-[0-9a-zA-Z]{32}
+```
+
 ### Mailto:
 ```
 (?<=mailto:)[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9.-]+
@@ -194,6 +229,11 @@ AIza[0-9A-Za-z\\-_]{35}
 ### MD5 Hash
 ```
 [a-f0-9]{32}
+```
+
+### Picatic API Key
+```
+sk_live_[0-9a-z]{32}
 ```
 
 ### Slack Token
@@ -211,9 +251,29 @@ https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{
 (?:r|s)k_live_[0-9a-zA-Z]{24}
 ```
 
+### Square Access Token
+```
+sqOatp-[0-9A-Za-z\\-_]{22}
+```
+
+### Square Oauth Secret
+```
+sq0csp-[ 0-9A-Za-z\\-_]{43}
+```
+
+### Twilio API Key
+```
+SK[0-9a-fA-F]{32}
+```
+
 ### Twitter Client ID
 ```
 (?i)twitter(.{0,20})?['\"][0-9a-z]{18,25}
+```
+
+### Twitter Oauth
+```
+[t|T][w|W][i|I][t|T][t|T][e|E][r|R].{0,30}['\"\\s][0-9a-zA-Z]{35,44}['\"\\s]
 ```
 
 ### Twitter Secret Key

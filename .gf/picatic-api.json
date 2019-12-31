@@ -1,0 +1,4 @@
+{
+    "flags": "-Prohi",
+    "pattern": "sk_live_[0-9a-z]{32}"
+}
