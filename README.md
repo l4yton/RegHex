@@ -55,6 +55,7 @@ Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `b
 - [Twitter Secret Key](#twitter-secret-key)
 - [URL Parameter](#url-parameter)
 - [URLs](#urls)
+- [Vault Token](#Vault-Token)
 - [Credits](#credits)
 
 ### Artifactory API Token
@@ -279,6 +280,11 @@ SK[0-9a-fA-F]{32}
 ### Twitter Secret Key
 ```
 (?i)twitter(.{0,20})?['\"][0-9a-z]{35,44}
+```
+
+### Vault Token
+```
+[sb]\.[a-zA-Z0-9]{24}
 ```
 
 ### URL Parameter
