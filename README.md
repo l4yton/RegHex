@@ -244,7 +244,7 @@ xox[baprs]-([0-9a-zA-Z]{10,48})?
 
 ### Slack Webhook
 ```
-https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}
+https://hooks.slack.com/services/T[a-zA-Z0-9_]{10}/B[a-zA-Z0-9_]{10}/[a-zA-Z0-9_]{24}
 ```
 
 ### Stripe API Key
@@ -297,7 +297,7 @@ With HTTP Protocol:
 ```
 https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
 ```
-Without Protocol: 
+Without Protocol:
 ```
 [-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
 ```
