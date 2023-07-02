@@ -249,7 +249,7 @@ https://hooks.slack.com/services/T[a-zA-Z0-9_]{10}/B[a-zA-Z0-9_]{10}/[a-zA-Z0-9_
 
 ### Stripe API Key
 ```
-(?:r|s)k_live_[0-9a-zA-Z]{24}
+(pk|sk|rk)_(test|live)_[A-Za-z0-9]+
 ```
 
 ### Square Access Token
