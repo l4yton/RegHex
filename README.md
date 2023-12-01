@@ -27,7 +27,7 @@ Therefore, go in your `.gf` directory with the `.json` files. Now simply run: `b
 - [Google API Key](#google-api-key)
 - [Google Cloud Platform API Key](#google-cloud-platfrom-api-key)
 - [Google Drive API Key](#google-drive-api-key)
-- [Goole Drive Oauth](#google-drive-oauth)
+- [Google Drive Oauth](#google-drive-oauth)
 - [Google Gmail API Key](#google-gmail-api-key)
 - [Google Gmail Oauth](#google-gmail-oauth)
 - [Google OAuth Access Token](#google-oauth-access-token)
